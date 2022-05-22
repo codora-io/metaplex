@@ -40,7 +40,7 @@ export async function awsUpload(
   animation: string,
   manifestBuffer: Buffer,
 ) {
-  const REGION = 'us-east-1'; // TODO: Parameterize this.
+  const REGION = 'eu-west-2'; // TODO: Parameterize this.
   const s3Client = new S3Client({ region: REGION });
 
   async function uploadMedia(media) {
